@@ -1,0 +1,58 @@
+
+
+.BoxGlobal {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3em;
+}
+
+@media only screen and (max-width: 1024px) {
+  .BoxChild {
+    min-width: 50%;
+    height: auto;
+    transition: 0.5s;
+    padding: 25px 0 0 0;
+  }
+}
+ @media only screen and (min-width: 1024px) {
+    .BoxChild {
+      min-width:25%;
+      height: auto;
+      transition: 0.5s;
+      padding: 25px 0 0 0;
+    }
+  }
+#moveBehind {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 5%;
+  height: 2em;
+  color: rgb(10, 10, 10);
+  z-index: 10;
+}
+#moveAhead {
+  position: absolute;
+  top: 35%;
+  right: 0;
+  width: 5%;
+  height: 2em;
+  color: rgb(0, 0, 0);
+  z-index: 10;
+
+}
+
+.poster {
+  width: 90%;
+  height: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+
