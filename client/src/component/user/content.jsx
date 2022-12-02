@@ -30,7 +30,7 @@ export default function Content() {
   const [data,setData] = useState([]);
   let [page, setPage] = useState(1);
   const [showGoTop,setGoTop] = useState(false)
-  const [skeleton,setSkeleton] = useState(true)
+
 
   useEffect(() => {
     if(search === ""){
@@ -73,15 +73,11 @@ export default function Content() {
     const handleScollOnTop = () =>{
       window.scrollTo({ top: 0, behavior: 'smooth' })    }
  
-      useEffect(()=>{
-        setTimeout(()=>{
-          setSkeleton(false)
-        },1000)
-      },[])
+    
     
   return (
     <Box className='bg-slate-100'>
-       {skeleton === true ?
+       {data === undifined ?
       (
        <SkeletonJsx></SkeletonJsx>
        )
