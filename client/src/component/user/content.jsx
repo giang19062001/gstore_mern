@@ -77,7 +77,7 @@ export default function Content() {
     
   return (
     <Box className='bg-slate-100'>
-       {data === undifined ?
+       {data === undefined ?
       (
        <SkeletonJsx></SkeletonJsx>
        )
